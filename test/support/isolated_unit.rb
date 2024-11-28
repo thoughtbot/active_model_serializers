@@ -71,7 +71,10 @@ module TestHelpers
         config.hosts << 'www.example.com' if Rails.version >= '6.0'
       end
       def app.name; 'IsolatedRailsApp'; end # rubocop:disable Style/SingleLineMethods
-      app.respond_to?(:secrets) && app.secrets.secret_key_base = '3b7cd727ee24e8444053437c36cc66c4'
+
+      secret_key_base = '3b7cd727ee24e8444053437c36cc66c4'
+      app.respond_to?(:secrets) && app.secrets.secret_key_base = secret_key_base
+      app.respond_to?(:credentials) && app.credentials.secret_key_base = secret_key_base
 
       @app = app
       yield @app if block_given?

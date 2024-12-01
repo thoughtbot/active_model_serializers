@@ -1,6 +1,6 @@
 ## 0.10.x
 
-### [master (unreleased)](https://github.com/rails-api/active_model_serializers/compare/v0.10.14...0-10-stable)
+### [master (unreleased)](https://github.com/rails-api/active_model_serializers/compare/v0.10.15...0-10-stable)
 
 Breaking changes:
 
@@ -9,6 +9,16 @@ Features:
 Fixes:
 
 Misc:
+
+### [v0.10.15 (2024-11-30)](https://github.com/rails-api/active_model_serializers/compare/v0.10.14...v0.10.15)
+
+Fixes:
+- [#2482](https://github.com/rails-api/active_model_serializers/pull/2482) Fix cant modify frozen Hash error due to rails changes (@vineelvineel)
+- [#2460](https://github.com/rails-api/active_model_serializers/pull/2460) Don't force ActionController::TestCase to load (@eugeneius)
+
+Misc:
+- [#2483](https://github.com/rails-api/active_model_serializers/pull/2483) Support Rails 8 (@pulkit110)
+
 
 ### [v0.10.14 (2023-10-05)](https://github.com/rails-api/active_model_serializers/compare/v0.10.13...v0.10.14)
 

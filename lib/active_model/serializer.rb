@@ -395,7 +395,7 @@ module ActiveModel
       if respond_to?(attr)
         send(attr)
       else
-        object.read_attribute_for_serialization(attr)
+        object.send(:read_attribute_for_serialization, attr)
       end
     end
 
